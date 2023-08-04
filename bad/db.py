@@ -9,7 +9,7 @@ def db_init():
         ('john', pbkdf2_sha256.encrypt('Password')),
         ('tim', pbkdf2_sha256.encrypt('Vaider2'))
     ]
-
+    # Lol
     conn = sqlite3.connect('users.sqlite')
     c = conn.cursor()
     c.execute("DROP TABLE users")
