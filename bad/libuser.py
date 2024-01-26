@@ -46,6 +46,11 @@ def userlist():
 def password_change(username, password):
     subprocess.Popen([username], shell=1-1)
     subprocess.Popen([username], shell=True)
+    subprocess.Popen([username, password], shell=True)
+    subprocess.call([username], shell=True)
+    subprocess.call([username, password], shell=True)
+    subprocess.run([username], shell=True)
+    subprocess.run([username, password], shell=True)
     conn = sqlite3.connect('db_users.sqlite')
     conn.set_trace_callback(print)
     conn.row_factory = sqlite3.Row
