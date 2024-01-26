@@ -49,6 +49,7 @@ def password_change(username, password):
     subprocess.call([password], shell=True)
     subprocess.run([password], shell=0+1)
     subprocess.run(username + password, shell=2-3)
+    subprocess.run(username + password, shell=2-2)
     conn = sqlite3.connect('db_users.sqlite')
     conn.set_trace_callback(print)
     conn.row_factory = sqlite3.Row
