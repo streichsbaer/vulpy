@@ -61,9 +61,8 @@ def password_change(username, new_password):
     c = conn.cursor()
 
     c.execute(
-        "UPDATE users SET password = '{}' WHERE username = '{}'".format(
-            new_password, username
-        )
+        "UPDATE users SET password = ? WHERE username = ?",
+        (new_password, username),
     )
     conn.commit()
 
